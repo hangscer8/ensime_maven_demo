@@ -1,0 +1,12 @@
+<%@ var names:List[String]%>
+<%@ var name:String %>
+<%@ var isTest:Boolean=false%>
+<h1>${name}</h1>
+<ul>
+#for(item <- names )
+    <li>${item}</li>
+#end
+</ul>
+#if(isTest)
+    <p>${isTest},这里是布尔类型</p>
+#end
